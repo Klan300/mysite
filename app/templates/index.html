@@ -1,0 +1,272 @@
+{% extends "base.html" %} 
+{% load static%}
+{%block content%}
+
+<section-container>
+<section id="home">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:h-screen">
+        <div class="max-h-96 md:h-screen top-0">
+            <img
+                class="w-screen h-screen object-cover object-top md:"
+                src="https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""
+            />
+        </div>
+        <div class="flex bg-gray-100 z-1 h-screen w-full">
+            <div class="md:mb-auto md:mt-auto mx-auto px-14 md:px-28 pt-8 w-full">
+                <img src="{% static '/images/profile.jpg' %}" alt="profile" class="mx-auto rounded-full w-64 h-64 m-4 object-cover shadow-2xl" width="384" height="384" >
+                <h1 class="text-3xl uppercase">Thun Thunkijjanukij</h1>
+                <p class="font-semibold mb-5">Intern Data Enginnering</p>
+                <p class="font-medium">
+                Welcome to my website my name is Thun Thunkijjankuij. 
+                Now I'm Study in year 3 at Software and Knowledge Engineering in Kasetsart University  
+                </p>
+                <button class="rounded-md py-3 px-7 mt-6 animate-pulse font-medium">
+                    <a id="education-next"class="hover:text-blue-600" href="#education">Next <span>&#62;</span></a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="h-screen" id="education">
+    <div class="w-full p-10 pt-14">
+        <h2 class="text-3xl uppercase text-center">Education</h2>
+    </div>
+    <div class="grid grid-row-3 ">
+        <div class="md:flex shadow-lg  bg-gray-100 mx-6 md:mx-auto rounded-xl max-w-lg md:max-w-2xl mb-7 md:mb-10">
+        <img class="w-full md:w-1/2 object-cover rounded-lg rounded-r-none pb-5/6 h-24 md:h-40" src="{% static '/images/Saint-dominic.jpg' %}" alt="bag">
+        <div class="w-full md:w-1/2 px-4 py-4 bg-gray-100 rounded-lg flex">
+                <h2 class="text-l text-gray-800 font-semibold mx-auto my-auto text-center">Saint Dominic School<br>
+                <span class="font-light">"Grade1-6"
+                </h2>
+        </div>
+        </div>
+        <div class="md:flex shadow-lg mx-6 md:mx-auto rounded-xl max-w-lg md:max-w-2xl mb-7 md:mb-10">
+        <img class="w-full md:w-1/2 object-cover rounded-lg rounded-r-none pb-5/6 h-24 md:h-40" src="{% static '/images/bodin.jpg' %}" alt="bag">
+        <div class="w-full md:w-1/2 px-4 py-4 bg-gray-100 rounded-lg flex">
+                <h2 class="text-l text-gray-800 font-semibold mx-auto my-auto text-center">Bodindecha School<br>
+                <span class="font-light">"Grade7-12"
+                </h2>
+        </div>
+    </div>
+    <div class="md:flex shadow-lg  mx-6 md:mx-auto rounded-xl max-w-lg md:max-w-2xl mb-7 md:mb-10">
+    <img class="w-full md:w-1/2 object-cover rounded-lg rounded-r-none pb-5/6 h-24 md:h-40" src="{% static '/images/kuengineer.jpg' %}" alt="bag">
+    <div class="w-full md:w-1/2 px-4 py-4 bg-gray-100 rounded-lg flex">
+            <h2 class="text-l text-gray-800 font-semibold mx-auto my-auto text-center">Kasetsart Univarsity<br>
+            <span class="font-light">"Sofeware and Knowledge Engineering in Branchelor degree"
+            </h2>
+    </div>
+    </div>
+    </div>
+</section>
+<section class=" bg-gray-200 max-h-screen md:p-24" id="experience">
+    <div class="py-20">
+    <div class="w-full p-14">
+        <h2 class="text-3xl uppercase text-center">Experience</h2>
+    </div>
+    <div class="carousel relative">
+        <div class="carousel-inner relative overflow-hidden w-full ">
+        <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item absolute opacity-0 m-20 mt-0">
+                    <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl">
+                        <div class="relative w-full md:w-2/5 overflow-hidden max-h-48 h-full rounded-t-lg md:rounded-t-none md:rounded-l-lg card-profile">
+                            <img class="absolute inset-0 w-full h-full lg:h-full object-cover object-center" src="{% static '/images/rabbit.png' %}" alt="">
+                            <div class="absolute inset-0 w-full h-full bg-gray-900 opacity-75"></div>
+                            <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
+                                <h1 class="font-black text-xl">Rabbit Digital Group</h1>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-3/5 flex items-center max-h-52 h-full bg-gray-100 rounded-lg">
+                            <div class="p-6 md:pr-24 md:pl-16 md:py-12">
+                            <p class="text-gray-600"><span class="text-gray-900"> At Rabbit digital Group</span><br>
+                            "Front-end Developer"<br/>
+                            05/2019 - 07/2019<br/>
+                            "create line liff by node.js and create api"
+                            </p>
+                            </div>
+                            <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <polygon points="50,0 100,0 50,100 0,100" />
+                            </svg>
+                        </div>
+                        </div>
+            </div>
+            <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black text-indigo-600 rounded-full bg-white hover:bg-indigo-600 hover:text-white leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-indigo-600 hover:text-white leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+            
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0 m-20 mt-0">
+                    <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl">
+                        <div class="relative w-full md:w-2/5 overflow-hidden max-h-48 h-full rounded-t-lg md:rounded-t-none md:rounded-l-lg card-profile">
+                            <img class="absolute inset-0 w-full h-full lg:h-full object-cover object-center" src="{% static 'images/ava-logo@3x.png' %}" alt="">
+                            <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div>
+                            <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
+                                <h1 class="font-black text-3xl md:text-3xl">AVA Advisor</h1>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-3/5 flex items-center max-h-52 h-full bg-gray-100 rounded-lg">
+                            <div class="p-6 md:pr-24 md:pl-16 md:py-12">
+                            <p class="text-sm md:text-base text-gray-600"><span class="text-gray-900">Internship At Ava Advisor</span><br>
+                                "Data Engineering/ Backend Developer" <br>
+                                06/2020 - 08/2020 <br>
+                                "store and design database from finnhub and create api for use data"
+                            </p>
+                            </div>
+                            <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <polygon points="50,0 100,0 50,100 0,100" />
+                            </svg>
+                        </div>
+                        </div>
+            </div>
+            <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-indigo-600 hover:text-white leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-indigo-600 hover:text-white leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+
+
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0 m-20 mt-0">
+                    <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl">
+                        <div class="relative w-full md:w-2/5 overflow-hidden max-h-48 h-full rounded-t-lg md:rounded-t-none md:rounded-l-lg card-profile">
+                            <img class="absolute inset-0 w-full h-full lg:h-full object-cover object-center" src="{% static '/images/Logo_1920-10800.png' %}" alt="">
+                            <div class="absolute inset-0 w-full h-full bg-gray-900 opacity-75"></div>
+                            <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
+                                <h1 class="font-black text-3xl md:text-3xl">CPSK Club</h1>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-3/5 flex items-center max-h-52 h-full bg-gray-100 rounded-lg">
+                            <div class="p-6 md:pr-24 md:pl-16 md:py-12">
+                            <p class="text-md text-gray-600"><span class="text-gray-900">Vice President of Computer Engineering Club</span><br>
+                                    05/2020 - 04/2021<br>
+                                    Organize Activity and Camp in Computer and Sofeware Engineering 
+                            </p>
+                            </div>
+                            <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <polygon points="50,0 100,0 50,100 0,100" />
+                            </svg>
+                        </div>
+                        </div>
+            </div>
+            <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-indigo-600 hover:text-white leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-indigo-600 hover:text-white leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!-- Add additional indicators for each slide-->
+            <ol class="carousel-indicators">
+                <li class="inline-block mr-3">
+                    <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+            </ol>
+            
+        </div>
+    </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="min-h-screen">
+        <div class="w-full p-20 mx-auto" >
+        <h2 class="text-3xl uppercase text-center">Contact</h2>
+        </div>
+        <div class="flex justify-center item-center p-16">
+            <form method="post" style="justify-center margin-top: 1.3em items-center">
+                {% csrf_token %}
+                <table>
+                    {{ comment_form.as_table }}
+                </table>
+                <div class="w-full content-center">
+                <button
+                    type="submit"
+                    class="py-2 px-4 mx-14 my-10 content-center rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700"
+                >
+                    Submit
+                </button>
+                </div>
+            </form>
+        </div>  
+        <div class="bg-gray-100 pt-2 ">
+   <div class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
+      md:flex-row max-w-6xl">
+
+      <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+         <a href="https://www.facebook.com/nathun.thun" class="w-6 mx-1">
+            <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="20%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+               <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                  5.373,-12 12,-12c6.627,0 12,5.373
+                  12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                  0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+            </svg>
+         </a>
+         <a href="https://www.linkedin.com/in/thun-thunkijjanukij-358272203/" class="w-6 mx-1">
+            <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="20%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+               <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                  3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                  -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                  -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                  -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                  0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                  3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                  -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                  -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                  1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                  -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                  -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                  0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                  0.4,1.5l0,4.5l2.9,0Z"></path>
+            </svg>
+         </a>
+      </div>
+   </div>
+</div>
+</section >
+</section-container>
+<style>
+    .carousel-open:checked + .carousel-item {
+        position: static;
+        opacity: 100;
+    }
+    .carousel-item {
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+    #carousel-1:checked ~ .control-1,
+    #carousel-2:checked ~ .control-2,
+    #carousel-3:checked ~ .control-3 {
+        display: block;
+    }
+    .carousel-indicators {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+    }
+    #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+    #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+        color: #2b6cb0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+        @media (min-width: 768px) {
+        .card-profile {
+        min-height: 19rem;
+        }
+    }
+		</style>
+
+  <!-- Carousel Tabs -->
+{%endblock%}
